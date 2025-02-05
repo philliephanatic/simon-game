@@ -4,6 +4,7 @@ $(".btn").click( function () {
     let userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
     
+    playSound(userChosenColor);
     console.log(userClickedPattern);
 });
 
@@ -30,23 +31,23 @@ function nextSequence () {
 function playSound(color) {
     switch (color) {
         case "blue":
-            const blue = new Audio("sounds/blue.mp3").play()
+            const blue = new Audio("sounds/blue.mp3").play();
             break;
     
         case "green":
-            const green = new Audio("sounds/green.mp3").play()
+            const green = new Audio("sounds/green.mp3").play();
             break;
     
         case "red" :
-            const red = new Audio("sounds/red.mp3").play()
+            const red = new Audio("sounds/red.mp3").play();
             break;
 
         case "yellow":
-            const yellow = new Audio("sounds/yellow.mp3").play()
+            const yellow = new Audio("sounds/yellow.mp3").play();
             break;
 
         case "wrong":
-            const wrong = new Audio("sounds/wrong.mp3").play()
+            const wrong = new Audio("sounds/wrong.mp3").play();
             break;
             
 }};
